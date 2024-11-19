@@ -1,5 +1,4 @@
 library(mgcv)
-library(fairmodels)
 library(xtable)
 library(fairadapt)
 set.seed(940984)
