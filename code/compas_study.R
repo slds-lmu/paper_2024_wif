@@ -213,7 +213,7 @@ g_mod_adapt <- glm(two_year_recid ~., family = binomial,
 summary(g_mod_adapt)
 
 #----------------------------------#
-#### 5. Predict in warped world ####
+#### 5. Predict in warped/adapt world ####
 #----------------------------------#
 
 # Predict target for test data
@@ -448,7 +448,7 @@ lines(density(compas$age[compas$race=="Non-White"]), col="blue", lty=2, lwd=2)
 legend("topright", legend=c("non-white", "white"), col = c("blue", "black"), lty = c(1:2), lwd=2)
 
 #----------------------------------#
-#### Tables for Paper ####
+#### Tables for paper ####
 #----------------------------------#
 
 head(dat_eval_pred[order(dat_eval_pred$diff_f_wr, decreasing=FALSE),])
